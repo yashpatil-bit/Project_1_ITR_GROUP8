@@ -142,12 +142,12 @@ sudo apt install -y ros-humble-control-msgs ros-humble-dynamixel-sdk python3-ser
 ```bash
 # 3) Workspace + this repository
 mkdir -p ~/peg_ws/src && cd ~/peg_ws/src
-git clone https://github.com/yashpatil-bit/Project_1_ITR_Prady_Yash_Kartik.git
+git clone https://github.com/yashpatil-bit/Project_1_ITR_Prady_Yash_Kartik_GROUP8.git
 ```
 
 ```bash
 # 4) Python dependencies
-pip3 install -r ~/peg_ws/src/Project_1_ITR_Prady_Yash_Kartik/requirements.txt
+pip3 install -r ~/peg_ws/src/Project_1_ITR_Prady_Yash_Kartik_GROUP8/requirements.txt
 ```
 
 ```bash
@@ -158,7 +158,7 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 
 ```bash
 # 6) U2D2: dialout group + 1 ms USB latency (log out and back in once afterwards)
-~/peg_ws/src/Project_1_ITR_Prady_Yash_Kartik/scripts/setup_usb_latency.sh
+~/peg_ws/src/Project_1_ITR_Prady_Yash_Kartik_GROUP8/scripts/setup_usb_latency.sh
 ```
 
 ```bash
@@ -181,7 +181,7 @@ the scene in `config/sim_scene.yaml` (same table, board, ArUco marker and pegs a
 attach to the simulated gripper and drop into a socket only if they are centred **and aligned**.
 
 ```bash
-cd ~/peg_ws/src/Project_1_ITR_Prady_Yash_Kartik
+cd ~/peg_ws/src/Project_1_ITR_Prady_Yash_Kartik_GROUP8
 ./launch/run_autonomy.sh --mock                                   # board placed like the lab photo
 ```
 
@@ -312,7 +312,7 @@ confused with the orange peg.
 ### 7.1 Autonomous (50 pts)
 
 ```bash
-cd ~/peg_ws/src/Project_1_ITR_Prady_Yash_Kartik
+cd ~/peg_ws/src/Project_1_ITR_Prady_Yash_Kartik_GROUP8
 ./launch/run_autonomy.sh                       # add --speed 1.3 to go faster, --no-confirm to skip the ENTER prompt
 ```
 What happens:
@@ -527,7 +527,7 @@ position and yaw still come from depth.
 ## 15. Tests
 
 ```bash
-cd ~/peg_ws/src/Project_1_ITR_Prady_Yash_Kartik/peg_sorting && python3 -m pytest -q test
+cd ~/peg_ws/src/Project_1_ITR_Prady_Yash_Kartik_GROUP8/peg_sorting && python3 -m pytest -q test
 ```
 27 tests. They cover the kinematics (FK/IK round trip, straight vertical approach, velocity limits), the shape classifier on noisy
 samples, end-to-end vision on the rendered scene (positions within 4 mm, yaw within 4°, all sockets found), ArUco
