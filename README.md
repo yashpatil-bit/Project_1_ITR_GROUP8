@@ -17,7 +17,7 @@ Team: Yash, Pradynesh, Kartik
 
 ## Demo and results
 
-**Demo video:** https://youtu.be/mMg1J6pUPaM
+**Demo video:** https://youtu.be/jrWNtkkBml8
 
 Best autonomous run on the real robot (14 Nov 2026, log `results/lab_runs/run_20261114_042611_autonomy.*`):
 **4/4 pegs placed, 0 failed attempts, 80.7 s in total** at `speed_scale 0.5`.
