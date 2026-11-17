@@ -13,7 +13,7 @@ their matching sockets with a **ROBOTIS OpenMANIPULATOR-X (Manipulator X)** and 
 * **Mock mode**: the whole stack runs on a laptop with a simulated arm and a rendered RGB-D camera,
   so you can test everything before going to the lab.
 
-Team: Prady, Yash, Kartik
+Team: Yash, Pradynesh, Kartik
 
 ## Demo and results
 
